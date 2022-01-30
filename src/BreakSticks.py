@@ -115,3 +115,41 @@ def get7configurations(lengths):
             #[a, c, e, f, d, b],
             #[a, c, f, d, e, b],
             #[a, c, f, e, d, b]   ]             
+
+          
+def get23configurations(lengths):
+  # Return the 23 "redundant" configurations
+  # [  49,    1, 4940, 4707,    0,    0,    0,    0,  161,  146,    0,
+  #     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+  #     0,    0, 2228,    0,    0,    0,    0,    0]
+  a,b,c,d,e,f = lengths 
+  return [  #[a, b, c, d, e, f], 
+            #[a, b, c, d, f, e],
+            #[a, b, c, e, d, f],
+            #[a, b, c, e, f, d],
+            [a, b, c, f, d, e],
+            [a, b, c, f, e, d],
+            [a, b, d, c, e, f],
+            [a, b, d, c, f, e],
+            #[a, b, d, e, c, f],
+            #[a, b, d, e, f, c],
+            [a, b, d, f, c, e],
+            [a, b, d, f, e, c],
+            [a, b, e, c, d, f],
+            [a, b, e, c, f, d],
+            [a, b, e, d, c, f],
+            [a, b, e, d, f, c],
+            [a, b, e, f, c, d],
+            [a, b, e, f, d, c],
+            [a, b, f, c, d, e],
+            [a, b, f, c, e, d],
+            [a, b, f, d, c, e],
+            [a, b, f, d, e, c],
+            [a, b, f, e, c, d],
+            [a, b, f, e, d, c],
+            #[a, c, d, e, f, b],
+            [a, c, d, f, e, b],
+            [a, c, e, d, f, b],
+            [a, c, e, f, d, b],
+            [a, c, f, d, e, b],
+            [a, c, f, e, d, b]   ]
